@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+article {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: stretch;
+  border: 2px solid black;
+  background-image: url(/kepek/hatter.jpg);
+  background-size: contain;
+  min-height: 100vh;
+  color: white;
+}
+/* --------------HEADER- NAV-------------------- */
+header {
+  border: 1px solid black;
+  background-image: url(/kepek/qwe.jpg);
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  width: 100%;
+  background-size: cover;
+
+}
+
+
+nav {
+  width: 100%;
+  background-image: url(/kepek/yellow2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+nav ul li {
+  /* display: flex;
+    padding: 0; */
+  list-style-type: none;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.link {
+  color: #ff0901;
+  text-shadow: #f1f1f1 0px 0px 2px, #dfdbdb 2px 2px 0px;
+  color: #f82c08;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: 2ms;
+
+}
+
+#demo {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  padding: 5px;
+}
+
+nav ul li a:hover {
+    font-size: 25px;
+}
+/* ------------------------- KÖZÉPSŐ --------------------- */
+aside {
+    color: white;
+    text-align: justify;
+}
+
+.kozep {
+  width: 100%;
+  display: flex;
+  margin-top: 70px;
+}
+
+.bal {
+  width: 20%;
+}
+
+.jobb {
+  width: 20%;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* ----------------------FŐOLDAL-------------------------*/
+.flexsor {
+  display: flex;
+  flex: 100%;
+  flex-direction: row-reverse;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.flexitem {
+display: flex;
+max-height: 150px;
+height: 140px;
+gap: 5px;
+flex-flow: nowrap;
+flex: 30%;
+}
+
+
+.flexitem-nagy {
+display: flex;
+flex: 0 0 45%;
+gap: 100px;
+height: 150px;
+flex-wrap: nowrap;
+}
+
+
+/* --------------------CANDIDE--------------------- */
+.flexitem5 {
+  display: flex;
+  height: 250px;
+  gap: 5px;
+  flex-flow: nowrap;
+  flex: 5%;
+}
+.flexitem5 img {
+  height: 200px;
+  width: 200px;
+}
+
+
+/* .flexitem-nagy {
+  display: flex;
+  flex: 0 0 45%;
+  gap: 100px;
+  height: 150px;
+  flex-wrap: nowrap;
+} */
+
+/* ------------------------ footer ------------------------ */
+
+footer {
+  border: solid 1px black;
+  text-align: center;
+  height: 3vh;
+  background-image: url(/kepek/yellow2.jpg);
+  /* opacity: 0.5; */
+  
+}
+/* -----------------------űrlap------------------------------- */
+article {
+    margin: auto;
+    background-color: rgba(250, 194, 9, 0.361);
+    box-shadow: 10px 10px 5px 0px rgba(211, 198, 16, 0.765);
+    width: 50vw;
+}
+.flexitem2 {
+    display: flex;
+    align-content: flex-end;
+    flex-flow: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding: 10px;
+
+}
+
+.flexitem2:nth-child(3) {
+    height: 100px;
+}
+
+form {
+    padding: 100px;
+    /* background-color: rgba(250, 194, 9, 0.361);
+    box-shadow: 10px 10px 5px 0px rgba(211, 198, 16, 0.765); */
+}
+
+textarea, select, form input {
+    background-color: rgba(211, 198, 16, 0.765);
+
+}
+
+/* -------------------------header--------------- */
+
+
+
+/* ----------------------ELŐLAP------------- */
+.dirr {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.durr {
+  margin: auto;
+}
+
+
+.btn {
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: none;
+  background: rgb(247, 202, 1);
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.btn {
+  will-change: transform;
+  transition: transform 450ms;
+}
+
+.btn:hover {
+  transition: transform 125ms;
+  transform: translateY(-50px);
+}
+
+/* -----------------töréspont--------------- */
+
+
+@media only screen and (max-width: 1322px) {
+    .flexitem2 {
+        display: flex;
+        align-content: flex-start;
+        flex-flow: column;
+        flex-wrap: wrap;
+    
+    }
+    
+    .flexitem2:nth-child(3) {
+        flex-wrap: wrap;
+    }
+
+    main {
+        height: auto;
+    }
+  }
+
+/* ------------------------------------ */
+.main {
+  font-family: 'Waiting for the Sunrise', cursive; 
+  font-size:30px; 
+  margin: 10px 50px; 
+  letter-spacing: 6px; 
+  font-weight: bold;
+}
+
+#typedtext {
+  padding: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+/* --------------------------------------- */
+
+@keyframes example {
+  from {background-color: rgb(248, 0, 0);}
+  to {background-color: rgb(6, 6, 255);}
+}
+
+/* The element to apply the animation to */
+div .btn {
+  background-color: rgb(211, 3, 3);
+  animation-name: example;
+  animation-duration: 15s;
+}
